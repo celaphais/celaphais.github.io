@@ -1,0 +1,271 @@
+/* BASE STYLES - Students can modify and extend */
+:root {
+    --primary-color: #007cba;
+    --secondary-color: #28a745;
+    --background-color: #0D0D0D;
+    --card-background: #FCFDFB;
+    --text-color: #ffffff;
+    --border-color: #ddd;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.454),
+    inset 0 2px 4px rgba(0, 0, 0, 0.454);
+}
+
+/* Prompted ChatGpt to assist me with flexbox spacing*/
+.heading {
+    display: flex;              
+    align-items: center; 
+    font-family: "Asimovian", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+.heading img {
+    margin-right: 15px;
+}
+
+.heading-text h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.heading-text h4 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+body {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 1rem;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.view-selector {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.view-button {
+    background: #0D0D0D;
+    color: #ffffff;
+    border: 1px solid #bebebe;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.view-button:hover {
+    background: #3e3e3e;
+    color: #ffffff;
+}
+
+.view-button.active {
+    background: #0D0D0D;
+    color: #ffffff;
+    border: 3px solid #bebebe;
+    font-weight: 400;
+}
+
+.display-container {
+    background: #0D0D0D;
+    border-radius: 8px;
+    padding: 2rem;
+    min-height: 400px;
+    box-shadow: var(--shadow);
+    border: 1px solid black;
+}
+
+.loading {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 2rem;
+}
+
+.error {
+    background: #fee;
+    border: 1px solid #fcc;
+    color: #c00;
+    padding: 1.5rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* UTILITY CLASSES FOR STUDENTS */
+.view-title {
+    margin: 0 0 1rem 0;
+    color: #ffffff;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.view-description {
+    color: #bebebe;
+    margin-bottom: 2rem;
+    font-style: normal;
+}
+
+/* CARD GRID LAYOUT */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.restaurant-card {
+    border: 1px solid #bebebe;
+    padding: 1.5rem;
+    background: #0D0D0D;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* TABLE LAYOUT */
+.restaurant-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.restaurant-table th,
+.restaurant-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.restaurant-table th {
+    background: #0D0D0D;
+    font-weight: 600;
+    border: 1px solid #bebebe;
+}
+
+.restaurant-table tr:hover {
+    background: #3e3e3e;
+}
+
+/* CATEGORY GROUPS */
+.category-section {
+    margin-bottom: 2rem;
+}
+
+.category-header {
+    background: #2b2b2b;
+    color: white;
+    padding: 1rem;
+    margin: 0;
+    border: 3px solid #bebebe;
+}
+
+.category-items {
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.category-item {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-item:last-child {
+    border-bottom: none;
+}
+
+/* STATS LAYOUT */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.stat-card {
+    
+    padding: 1rem;
+    background: #0D0D0D;;
+    color: white;
+    border: 1px solid #bebebe;
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+}
+
+.todo-implementation {
+    background: #fff3cd;
+    border: 2px dashed #ffc107;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    color: #856404;
+}
+
+.asst-box {
+    margin-top: 2px;
+    padding: 2px;
+    background: #0D0D0D;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    color:#ffffff;
+}
+
+.classified {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    color:#d10000;
+}
+
+/* MAP CONTAINER */
+.map-container {
+    height: 20rem;
+    width: 100%;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+#restaurant-map {
+    height: 480px;
+    width: 100%;
+    border-radius: var(--border-radius);
+}
