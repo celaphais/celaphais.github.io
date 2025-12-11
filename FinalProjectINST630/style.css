@@ -1,0 +1,130 @@
+/* Referenced Gabriel "GMLYRA" Miranda's public codepen for the styling of a medieval button with some adjustments */
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#three_container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  
+}
+
+.story_panel {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: #f4e5c3;
+  border-radius: 10px;
+  font-family: "MedievalSharp", cursive;
+  max-width: 920px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  padding: 10px 20px;
+  background-color: #795649;
+  border: 6px solid #c0a080; 
+  font-size: 20px;
+  border-radius: 4px; 
+  transition: all 0.3s ease;
+}
+
+#story_text{
+  font-family: 'Goudy Bookletter 1911', serif; 
+  font-size: 25px;
+  
+}
+
+/* Position the buttons */
+.reset_button {
+  position: absolute;
+  z-index: 10;
+  font-family: "MedievalSharp", cursive;
+  border-radius: 8px;
+  font-size: 20px;
+  top: 20px;
+  right: 20px;
+  width: 175px;
+  padding: 10px 10px;
+  background-color: #795649;
+  color: #f4e5c3;
+  border: 4px solid #c0a080;
+  text-shadow: 1px 1px 0px #a67c52;
+  box-shadow: 2px 2px 0px #a67c52;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.music_button {
+  position: absolute;
+  z-index: 10;
+  font-family: "MedievalSharp", cursive;
+  border-radius: 8px;
+  font-size: 20px;
+  top: 20px;
+  left: 20px;
+  width: 175px;
+  padding: 10px 10px;
+  background-color: #795649;
+  color: #f4e5c3;
+  border: 4px solid #c0a080;
+  text-shadow: 1px 1px 0px #a67c52;
+  box-shadow: 2px 2px 0px #a67c52;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.next_button {
+  position: absolute;
+  z-index: 10;
+  font-family: "MedievalSharp", cursive;
+  border-radius: 8px;
+  font-size: 25px;
+  bottom: 20px;
+  right: 20px;
+  width: 250px;
+  padding: 10px 20px;
+  background-color: #795649;
+  color: #f4e5c3;
+  border: 4px solid #c0a080;
+  text-shadow: 1px 1px 0px #a67c52;
+  box-shadow: 2px 2px 0px #a67c52;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.prev_button {
+  position: absolute;
+  z-index: 10;
+  font-family: "MedievalSharp", cursive;
+  border-radius: 8px;
+  font-size: 25px;
+  bottom: 20px;
+  left: 20px;
+  width: 250px;
+  padding: 10px 20px;
+  background-color: #795649;
+  color: #f4e5c3;
+  border: 4px solid #c0a080;
+  text-shadow: 1px 1px 0px #a67c52;
+  box-shadow: 2px 2px 0px #a67c52;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+}
+
+.next_button:hover,
+.prev_button:hover {
+    background-color: #6c582a;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+.next_button:hover,
+.prev_button:hover {
+    box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+    transform: translateY(2px);
+  }

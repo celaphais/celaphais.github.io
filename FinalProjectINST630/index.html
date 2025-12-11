@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started with Three.js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <audio id="bgMusic" src="Concerning_Hobbits.mp3"></audio>
+
+    <script type="importmap">
+			{
+				"imports": {
+					"three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+          "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+        }
+			}
+		</script>
+  </head>
+  <body>
+  <div id="three_container"></div>
+
+  <div class="story_panel">
+    <h3 id="story_title">Chapter 1</h3>
+    <p id="story_text">Story text goes here</p>
+  </div>
+
+  <button id="musicBtn" class="music_button">Play Music</button>
+  <button id="resetSceneBtn" class="reset_button">Restart Story</button>
+  <button id="prevSceneBtn" class="prev_button">Previous Scene</button>
+  <button id="nextSceneBtn" class="next_button">Next Scene</button>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
