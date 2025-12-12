@@ -131,7 +131,7 @@
   { "file": "assets/hex_water.gltf", "pos": [6, 0, 3.4], "rotX": "0", "scaleY": 1 },
   { "file": "assets/hex_water.gltf", "pos": [8, 0, 3.4], "rotX": "0", "scaleY": 1 },
   { "file": "assets/hex_coast_C.gltf", "pos": [10, 0, 3.4], "rotX": "Math.PI", "scaleY": 1 },
-  { "file": "assets/hex_Coast_E.gltf", "pos": [12, 0, 3.4], "rotX": "4*Math.PI/3", "scaleY": 1 },
+  { "file": "assets/hex_coast_E.gltf", "pos": [12, 0, 3.4], "rotX": "4*Math.PI/3", "scaleY": 1 },
   { "file": "assets/trees_A_medium.gltf", "pos": [12, 0, 3.4], "rotX": "0", "scaleY": 1 },
   { "file": "assets/hex_grass.gltf", "pos": [-2, 0, 3.4], "rotX": "0", "scaleY": 1 },
   { "file": "assets/hex_road_B.gltf", "pos": [-4, 0, 3.4], "rotX": "0", "scaleY": 1 },
@@ -183,3 +183,4 @@
   { "file": "assets/building_mine_red.gltf", "pos": [-8, 0, 6.8], "rotX": "Math.PI/6", "scaleY": 1 },
   { "file": "assets/mountain_B_grass.gltf", "pos": [-10, 0, 6.8], "rotX": "4*Math.PI/3", "scaleY": 1 }
 ]
+
